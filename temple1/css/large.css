@@ -1,0 +1,14 @@
+@media only screen and (min-width: 1020px) {
+
+    nav ul {padding-left: 2%;}
+    nav li {width: auto;}
+    nav a {padding: .5rem 1rem;}
+
+main figure{ 
+    width: 51%;
+}
+div.news{ column-count: 4;}
+}
+main{ max-width: 85rem; margin: auto;}
+
+main h2{ padding: 30px;}
