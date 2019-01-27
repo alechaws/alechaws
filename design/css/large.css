@@ -19,7 +19,17 @@
 
 
 /*----------- MAIN --------------*/
+main figure.mainphoto{
+    float: right;
+    min-width: 33%;
+    margin-left:  2%;
+    margin-right: 2%;
 
+}
+main figure.mianphoto img figcaption{
+  
+   text-align: center;
+}
 
 
 /*----------- FOOTER --------------*/

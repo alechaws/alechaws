@@ -20,6 +20,17 @@ header h2{font-size: 1.5rem}
 
 /*----------- MAIN --------------*/
 
+main figure.mainphoto{
+    float: right;
+    min-width: 50%;
+    margin-left:  2%;
+    margin-right: 2%;
+
+}
+main figure.mianphoto img figcaption{
+  
+   text-align: center;
+}
 
 
 /*----------- FOOTER --------------*/
