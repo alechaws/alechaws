@@ -1,0 +1,110 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #6965db;
+    font-family: 'Roboto', sans-serif;
+    
+}
+header img {
+            float: left;
+            margin-right: 10px;
+            width: 15%;}
+header h1 {
+            margin: 0;
+            font-size: 1.75rem;
+            color: #ffa62f;
+            text-align: center;
+}
+header h2 {
+        font-weight: normal;
+        font-size: .5rem;
+        color: #ffa62f;
+        margin: 0;
+        text-align: center;
+    }
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #648af2;
+    font-family: 'Roboto', sans-serif;
+    
+ }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #eee;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+    color: #ffd62f;
+}
+
+
+nav ul li a:hover {
+    background-color: #33509e;
+    color: #ffd62f;
+}
+nav ul li.active a {
+    background-color: #6965db;
+    color: #ffd62f;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 01rem 2%;
+    min-height: 10rem;
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif
+    
+}
+main figure.mainphoto img{
+    text-align: center;
+   
+    margin: 0 0 0 0;
+    
+}
+main figure.mainphoto figcaption{
+    text-align: center;
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #6965db ;
+    padding: .5rem 2%;
+    text-align: center;
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffa62f;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
