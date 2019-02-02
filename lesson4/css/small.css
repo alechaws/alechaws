@@ -32,7 +32,7 @@ header h1 {
 }
 header h2 {
         font-weight: normal;
-        font-size: .5rem;
+        font-size: .9rem;
         color: #ffa62f;
         margin: 0;
         text-align: center;
@@ -86,7 +86,15 @@ main figure.mainphoto img{
 main figure.mainphoto figcaption{
     text-align: center;
 }
-
+main h1{
+    font-size: 2rem;
+    }
+main h2{
+    font-size: 1.5rem;
+    }
+main p{
+    font-size: 1rem;
+}
 
 /*----------- FOOTER --------------*/
 footer {
