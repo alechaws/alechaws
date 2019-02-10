@@ -1,0 +1,145 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #6965db;
+    font-family: 'Roboto', sans-serif;
+    
+}
+header img {
+            float: left;
+            margin-right: 10px;
+            width: 15%;}
+header h1 {
+            margin: 0;
+            font-size: 1.25rem;
+            color: #ffa62f;
+            text-align: center;
+}
+header h2 {
+        font-weight: normal;
+        font-size: .9rem;
+        color: #ffa62f;
+        margin: 0;
+        text-align: center;
+    }
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #648af2;
+    font-family: 'Roboto', sans-serif;
+    
+ }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #eee;
+    padding: .33rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+    color: #ffd62f;
+}
+
+
+nav ul li a:hover {
+    background-color: #33509e;
+    color: #ffd62f;
+}
+nav ul li.active a {
+    background-color: #6965db;
+    color: #ffd62f;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 1rem 1%;
+    min-height: 10rem;
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif
+}
+main .skyhero{
+    width: 100%;
+    padding: 0px;
+}
+main .snowman{
+    width:50%;
+    float: right;
+}
+main figure.mainphoto img{
+    text-align: center;
+   
+    margin: 0 0 0 0;
+    
+}
+main figure.mainphoto figcaption{
+    text-align: center;
+}
+main h1{
+    font-size: 2rem;
+    }
+main h2{
+    font-size: 1.5rem;
+    }
+main p{
+    font-size: 1rem;
+}
+main h2.fiveday{
+    display: none;
+}
+main table, th, td{
+    position: absolute;
+    visibility: hidden;
+}
+main section{ 
+    position: absolute;
+    visibility: hidden;
+}
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #6965db ;
+    padding: .25rem 1%;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    font-size: 1rem;;
+    font-family: 'Roboto', sans-serif;
+    color: #ffa62f;
+}
+
+footer p{
+    font-size: 1rem;
+    text-align: left;
+    list-style-type: none;
+    display: block;
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
+}
+footer p a{
+    font-weight: bold;
+    color: #000
+}
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
