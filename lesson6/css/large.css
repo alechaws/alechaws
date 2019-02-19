@@ -45,6 +45,9 @@ main table, th, td{
 
 
 /*----------- FOOTER --------------*/
-
+footer p{ 
+    column-count: 2;
+}
+    
 }
 /* end of media query */

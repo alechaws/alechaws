@@ -124,7 +124,7 @@ main section{
 /*----------- FOOTER --------------*/
 footer {
     background-color: #6965db ;
-    padding: .25rem 1%;
+    padding: .2rem 1%;
     text-align: center;
     width: 100%;
     height: auto;
@@ -134,20 +134,31 @@ footer {
 }
 
 footer p{
-    font-size: 1rem;
+    font-size: .8rem;
     text-align: left;
     list-style-type: none;
     display: block;
-    margin-bottom: 0rem;
-    padding-bottom: 0rem;
+    margin-bottom: .25rem;
+    padding-bottom: .25rem;
+    column-count: 2;
+    column-width: 50%;
+    column-span: 1;
+    column-rule-width: 2rem;
 }
 footer p a{
     font-weight: bold;
-    color: #000
+    font-size:.8rem;    
 }
 footer p.date{
     text-align: center;
-    padding: .25rem;
+    padding: 1rem;
+    font-size:.8rem;
+}
+footer p a.titles{
+    color: #000;
+}
+footer p a.address{
+    font-size: .6rem;
 }
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
