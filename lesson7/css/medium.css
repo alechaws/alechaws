@@ -1,0 +1,89 @@
+/* 35em is also 560px (if basefont is 16px) */
+@media only screen and (min-width: 560px) {
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+header img {width: 90%;
+            float: left;}
+header h1{font-size: 4rem;}
+header h2{font-size:1.8rem}
+
+/*----------- NAVIGATION --------------*/
+    button{display: none;
+    }
+    nav ul {margin-left: 2%;}
+    nav ul li {float: left;}
+
+    nav ul li a{padding: .6rem .5rem;
+                font-size: 1.1rem;}
+    nav ul.hide{display: block;}
+
+/*----------- MAIN --------------*/
+
+main figure.mainphoto{
+    float: right;
+    min-width: 50%;
+    margin-left:  2%;
+    margin-right: 2%;
+
+}
+main section.currentweather{
+    padding:0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+main h2.fiveday{ display: block;
+                 margin: 0;}
+
+main table, th, td{
+    position: relative;
+    visibility: visible;
+    border: 1px black solid;
+    width: 100%;
+}
+main div.currentText{
+    color: #eee
+}
+
+.hero{
+    margin: 10px auto; position: relative;
+}
+
+.currentweather{
+    position: absolute;
+    visibility: visible;
+    top: 50px;
+	right: 65%;
+	border: 1px solid #000;
+    padding: 2rem;
+    box-shadow: 0 0 30px #fff;
+    
+    }
+.currentweather h3{
+    margin: 0;
+    padding: 0;
+}
+
+main img.snowman{
+    width: 25%;
+    float: right;
+    margin: 1rem;
+}
+div.gallery figure{
+    flex-basis: 46%;
+}
+
+
+/*----------- FOOTER --------------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    clear: both;
+    font-size: 1rem;
+}
+
+} /* end of media query */
