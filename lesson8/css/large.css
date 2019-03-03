@@ -1,0 +1,65 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 1020px) {
+m
+    header, nav, main, footer {
+        max-width: 64rem;
+        margin:auto;
+    }
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+header img {
+    float: left;}
+header h1{font-size: 5rem;
+    margin-top: 4rem;}
+header h2{font-size:2.5rem}
+
+
+
+
+/*----------- NAVIGATION --------------*/
+nav ul {margin-left: 2%;}
+nav ul li {float: left;}
+
+nav ul li a{padding: .6rem .5rem;
+            font-size: 1.1rem;}
+
+
+
+/*----------- MAIN --------------*/
+main img.snowman{
+    width: 30%;
+    float: right;
+    margin: 1rem;
+}
+main table, th, td{
+    position: relative;
+    visibility: visible;
+    border: 1px black solid;
+    width: 100%;
+
+}   
+.currentweather{
+    right:75%;
+}
+div.gallery figure{
+    flex-basis: 29%;
+}
+/*------FORM-----------------*/
+form label.sbs{
+    padding: 0.4rem 0;
+}
+form fieldset{
+    width: 25rem;
+}
+
+/*----------- FOOTER --------------*/
+footer p{ 
+    column-count: 2;
+}
+    
+}
+/* end of media query */
