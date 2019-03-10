@@ -136,6 +136,30 @@ div.gallery figure img{
 div.gallery figure img:hover{
     box-shadow: 0 0 10px #ffa62f;
 }
+main.json{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+main.json article{
+    width: 280px;
+    margin: 2rem 2%;
+    padding:5px;
+    border:3px solid #ffa62f;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #333;
+    transition: all .2s ease-in-out;
+}
+main.json article img{
+    display:flex;
+    margin: 0 auto;
+    height:auto;
+    width:250px;
+    border-radius: 2px;
+}
+main.json article:hover{
+    transform: scale(1.05); 
+    }
  /*--------------Form----------------*/
  form fieldset{
     margin: 2rem 0;
@@ -188,6 +212,7 @@ form label.top input:required:valid{
 fieldset{
     max-width: 313px;
 }
+
 /*----------- FOOTER --------------*/
 footer {
     background-color: #6965db ;
@@ -208,8 +233,6 @@ footer p{
     margin-bottom: .25rem;
     padding-bottom: .25rem;
     column-count: 2;
-    column-width: 50%;
-    column-span: 1;
     column-rule-width: 2rem;
 }
 footer p a{

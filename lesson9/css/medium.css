@@ -73,7 +73,11 @@ main img.snowman{
     margin: 1rem;
 }
 div.gallery figure{
+    flex-wrap: wrap;
     flex-basis: 46%;
+}
+main.json{
+    flex-basis: 45%;
 }
 /*------FORM-----------------*/
 

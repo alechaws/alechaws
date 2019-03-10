@@ -48,6 +48,12 @@ main table, th, td{
 div.gallery figure{
     flex-basis: 29%;
 }
+object{
+    width: 30%;
+}
+main.json{
+    flex-basis: 27%;
+}
 /*------FORM-----------------*/
 form label.sbs{
     padding: 0.4rem 0;
@@ -55,7 +61,9 @@ form label.sbs{
 form fieldset{
     width: 25rem;
 }
-
+object{
+    width: 20%;
+}
 /*----------- FOOTER --------------*/
 footer p{ 
     column-count: 2;
