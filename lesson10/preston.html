@@ -59,6 +59,7 @@
     <main class="clearfix">
         <h1>Preston, Idaho</h1>
         <h3>Weather, forecast, and news for Preston, Idaho.</h3>
+        
             <div class="hero">
                 <img class="skyhero" 
                 src= "images/skyhero.jpg"                        
@@ -71,16 +72,17 @@
 
                 <section class="currentweather">
                     <div class="currentText">
-                        <h3>Current Conditions</h3>
-                        <p>Partly Cloudy</p>
-                        <p>Low/High:30&deg;/60&deg;</p>
-                        <p>Current: <a id="temperature">59</a>&deg;</p>
-                        <p>Windspeed:<a id="windSpeed">7</a>mph</p>
-                        <p>Windchill: <script src="scripts/windchill.js"></script>&deg;</p>
+                        <h3>Current Conditions:</h3>
+                        <img src="images/placeholder.png" alt="current weather" id="weather_icon">
+                        <p>Low:<span id="low">00</span>&deg;</p>
+                        <p>High:<span id="high">00</span>&deg;</p>
+                        <p>Current:<span id="currentTemp">00</span>&deg;</p>
+                        <p>Windspeed:<a id="windSpeed">00</a>mph</p>
+                        <p>Windchill: <span id="windChill"></span>&deg;</p>
                     </div>
                 </section>
             </div>
-            
+            <script src="scripts/openWeather.js"></script>
         <h2 class="fiveday">Five Day Forecast Details:</h2>
             <table>
                 <tr>

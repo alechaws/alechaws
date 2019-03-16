@@ -1,6 +1,18 @@
-var tempF= parseFloat(document.getElementById("temperature").innerHTML);
-var speed= parseFloat(document.getElementById("windSpeed").innerHTML);
+var weatherObject =  new XMLHttpRequest();
+weatherObject.open('GET','http://api.openweathermap.org/data/2.5/weather?zip=85208,us&appid=6eac7e39498499a5967dcc07fc168e3f&units=imperial',true);
 
-var chill= 35.74 + 0.6215 * tempF - 35.75 * (Math.pow(speed, 0.16)) + 0.4275 * tempF * (Math.pow(speed, 0.16));
+weatherObject.send();
 
-document.write(Math.round(chill).toFixed(1));
+weatherObject.onload = function(){
+    var weatherInfo= JSON.parse(weatherObject.responseText)
+    console.log(weatherInfo);
+    console.log("Suggma")
+
+
+    
+
+
+
+
+//document.write(Math.round(chill).toFixed(1));
+}
