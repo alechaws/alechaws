@@ -24,15 +24,15 @@ function showData(jsonObj) {
     var myPara4 = document.createElement('p');
     var myImg = document.createElement('img');
 
-    if (towns[i].name == "Franklin") {
+    if (towns[i].name == "Preston") {
       myImg.setAttribute('src', 'https://cdn.glitch.com/0e6459e2-7f45-4e2b-8100-f606b11bdadc%2Fdownload.jpeg?1551738255453');
-      myImg.setAttribute('alt', 'Franklin Image');
+      myImg.setAttribute('alt', 'Preston')
   } else if (towns[i].name == "Fish Haven") {
       myImg.setAttribute('src', 'https://cdn.glitch.com/0e6459e2-7f45-4e2b-8100-f606b11bdadc%2Fdownload.jpeg?1551738255453');
-      myImg.setAttribute('alt', 'Fish Haven');
-  } else if (towns[i].name == "Greenville") {
+      myImg.setAttribute('alt', 'Soda Springs');
+  } else if (towns[i].name == "Soda Springs") {
       myImg.setAttribute('src', 'https://cdn.glitch.com/0e6459e2-7f45-4e2b-8100-f606b11bdadc%2Fdownload.jpeg?1551738255453');
-      myImg.setAttribute('alt', 'Greenville');
+      myImg.setAttribute('alt', 'Fish Haven');
   }
 
     myH2.textContent = towns[i].name;

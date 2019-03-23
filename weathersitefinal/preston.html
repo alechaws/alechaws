@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="GonnaRain Weather information for Preston, ID">
+<meta name="author" content="Alec Haws">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>GonnaRain- Preston, Idaho</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+
+<script src="scripts/toggleMenu.js"></script>
+
+<link rel="icon" href="images/logo.png">
+
+<script src="scripts/current_Preston.js"></script>
+<script src="scripts/fiveDay_Preston.js"></script>
+
+</head>
+<body>
+<!-- HEADER HERE -->
+	
+        <header class="clearfix">
+            <div>
+                 <img src="images/logo.png" alt="logo">        
+            </div>
+            <div>        
+                <h1>GonnaRain?</h1>
+                <h2>Gonna rain? Gotta know.</h2>
+            </div>
+            <div></div>
+            
+    </header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>       
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main class="clearfix">
+        <h1>Preston, Idaho</h1>
+        <h3>Weather, forecast, and news for Preston, Idaho.</h3>
+        
+            <div class="hero">
+                <img class="skyhero" 
+                src= "images/skyhero.jpg"                        
+                sizes= "100vw"
+                srcset=
+               "images/skyheroSmall.jpg 350w,
+                images/skyheroMedium.jpg 800w,
+                images/skyheroLarge.jpg 1200w"
+                alt="background image">
+
+                
+
+                <section class="currentweather">
+                    <div class="currentText">
+                        <h3>Current Conditions:</h3>
+                        <img src="images/placeholder.png" alt="current weather" id="weather_icon">
+                        <p>Low:<span id="low">00</span>&deg;</p>
+                        <p>High:<span id="high">00</span>&deg;</p>
+                        <p>Current:<span id="currentTemp">00</span>&deg;</p>
+                        <p>Windspeed:<a id="windSpeed">00</a>mph</p>
+                        <p>Windchill: <span id="windChill"></span>&deg;</p>
+                    </div>
+                </section>
+            </div>
+            
+            
+        
+        <h2 class="fiveday">Five Day Forecast Details:</h2>
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>Description</th>
+                    <th>High</th>
+                    <th>Low</th>
+                    <th>Wind</th>
+                </tr>
+                <tr>
+                    <td><span id="day0">DAY</span></td>
+                    <td><span id="condition0">CONDITION</span></td>
+                    <td><span id="fivelow0">00</span>&deg;</td>
+                    <td><span id="fivehigh0">00</span>&deg;</td>
+                    <td><span id="wind0">WIND</span> mph</td>
+                </tr>     
+                <tr>
+                    <td><span id="day1">DAY</span></td>
+                    <td><span id="condition1">CONDITION</span></td>
+                    <td><span id="fivelow1">00</span>&deg;</td>
+                    <td><span id="fivehigh1">00</span>&deg;</td>
+                    <td><span id="wind1">WIND</span> mph</td>
+                </tr>
+                <tr>
+                    <td><span id="day2">DAY</span></td>
+                    <td><span id="condition2">CONDITION</span></td>
+                    <td><span id="fivelow2">00</span>&deg;</td>
+                    <td><span id="fivehigh2">00</span>&deg;</td>
+                    <td><span id="wind2">WIND</span> mph</td>
+                </tr>
+                <tr>
+                    <td><span id="day3">DAY</span></td>
+                    <td><span id="condition3">CONDITION</span></td>
+                    <td><span id="fivelow3">00</span>&deg;</td>
+                    <td><span id="fivehigh3">00</span>&deg;</td>
+                    <td><span id="wind3">WIND</span> mph</td>
+                </tr>
+                <tr>
+                    <td><span id="day4">DAY</span></td>
+                    <td><span id="condition4">CONDITION</span></td>
+                    <td><span id="fivelow4">00</span>&deg;</td>
+                    <td><span id="fivehigh4">00</span>&deg;</td>
+                    <td><span id="wind4">WIND</span> mph</td>
+                </tr>
+            </table>
+
+
+        <h2 class="thisday">This day in history...</h2>
+            <img class="tdih"
+            srcset="images/snowmanSmall.jpg 250w,
+                    images/snowmanMedium.jpg 450w,
+                    images/snowman.jpg 1250w"
+            sizes="40vw"
+            src="images/snowman.jpg"
+            alt="snowman">
+        <p>On this day in history in 1978 there was a large blizzard that blanketed most of New England in several feet of snow. In come cities, the snow got to be almost 55 inches deep (that is almost six feet!). As you can imagine, this would be a terrible thing to have to experiene for a number of reasons including the fact that it would be extremely cold, you would be stuck inside, and there would not be school for your children!</p>
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer>
+             
+            <p><a class="titles">Address:<br></a><a class="address">GonnaRain Weather Station<br>34 South Furough Zen Way<br>Mesa, AZ 85208</a><br><a class="titles"><br>Phone: </a>(480)414-2342<a class="titles"> <br><br>Email: </a>contact@gonnarain.com</p>
+                   
+           
+            <script src="scripts/currentdate.js"></script> <br>  
+        &copy; 2019 &bull; Alec Haws &bull; 480-867-5309
+        
+    </footer>
+    
+</body>
+</html>
