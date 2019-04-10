@@ -1,0 +1,214 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|PT+Sans+Narrow|Raleway:200i');
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #517b8d;
+    display: grid;
+    grid-template-rows: 15% auto;
+    font-family: 'Great Vibes', cursive;
+    color: #dfdfdf;
+}
+header img{
+    float: left;
+    width: 10rem;
+}
+header h1,h2{
+    text-align: center;
+    margin: .25rem;
+    padding: .25rem;
+
+}
+header h1{
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+header h2{
+    font-size: 1rem;
+}
+/*----------- NAVIGATION --------------*/
+button{
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.7rem;
+    color:#517b8d;
+}
+nav {
+    background-color: #dfdfdf;
+    font-family: 'PT Sans Narrow', sans-serif;    
+ }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #eee;
+    padding: .33rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+    color: #517B8D;
+}
+
+
+nav ul li a:hover {
+    background-color: #dfdfdf;
+    color: #51B5E0;
+}
+nav ul li.active a {
+    background-color: #8f8f8f;
+    color: #517B8D;
+}
+nav ul li.active a:hover {
+    background-color:  #8f8f8f;
+    color: #51B5E0;
+}
+nav ul.hide{display: none;}
+/*----------- MAIN --------------*/
+main{
+    background-color: rgba(223, 223, 223, 0.596);
+    font-family: 'PT Sans Narrow', sans-serif;    
+}
+
+div.mainpage{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+div.mainpage article{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: black solid 3px;
+    padding: 0;
+    margin: 0;
+}
+.pita{
+    opacity: .8;
+}
+div.mainpage article.article0{
+    position: relative;
+    text-align: center;
+    color: #DFDFDF;
+    width: 100%;
+}
+div.mainpage article.article0 .texttop{
+    position: absolute;
+    bottom: 82%;
+    font-family: 'Great Vibes', cursive;
+    z-index: 1;
+}
+div.mainpage article.article0 .text1{
+    position: absolute;
+    bottom: 71%;
+    z-index: 1;
+}
+div.mainpage article.article0 .text2{
+    position: absolute;
+    bottom: 45%;
+    z-index: 1;
+}
+div.mainpage article.article0 .text3{
+    position: absolute;
+    bottom: 26%;
+    color: white;
+    font-size: 2.5rem;
+    text-decoration: none;
+    background-color: #517B8D;
+    border-radius: 15px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);
+    padding: .5rem;
+    transition-duration: .05s;
+    z-index: 1;
+}
+div.mainpage article.article0 .text3:hover{
+    box-shadow: 0 4px 8px 0 #DFDFDF, 0 6px 20px 0 #DFDFDF;
+}
+div.mainpage article.article0 .textbottom{
+    position: absolute;
+    bottom: 0%;
+}
+div.mainpage article.article0 img{
+    display: flex;
+    width:100%;
+}
+
+div.mainpage article.article0 h1{
+    padding: 0 1%;
+    margin: 0 1%;
+    
+}
+div.mainpage article.article1 img{
+    display: flex;
+    width: 250px;
+}      
+
+div.mainpage article.article1{
+    width: 350px;
+}
+/*------------Form--------------*/
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #DFDFDF ;
+    padding: .2rem 1%;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    font-size: 1rem;;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #517B8D;
+}
+
+footer p{
+    font-size: .8rem;
+    text-align: left;
+    list-style-type: none;
+    display: block;
+    margin-bottom: .25rem;
+    padding-bottom: .25rem;
+    column-count: 2;
+    column-rule-width: 2rem;
+}
+footer p a{
+    font-weight: bold;
+    font-size:1rem;    
+}
+footer p.date{
+    text-align: center;
+    padding: 1rem;
+    font-size:.8rem;
+}
+footer p a.titles{
+    color: #000;
+}
+footer p a.address{
+    font-size: 1rem;
+}
+footer p a.email{
+    font-size: 1rem;
+}
+div.end{
+    margin-top: 1rem;
+}
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
