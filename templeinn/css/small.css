@@ -6,8 +6,13 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-
-
+main{
+    max-width: 110rem;
+    margin:auto;
+}
+body{
+    background-color:#DFDFDF;
+}
 /*----------- HEADER --------------*/
 header {
     padding: .5rem 2%;
@@ -160,19 +165,22 @@ div.mainpage article.article1 img{
 div.mainpage article.article1{
     width: 350px;
 }
+div.mainpage article.article2{
+    width:auto;
+}
 /*------------Form--------------*/
 
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #DFDFDF ;
+    background-color: #517b8d ;
     padding: .2rem 1%;
     text-align: center;
     width: 100%;
     height: auto;
     font-size: 1rem;;
     font-family: 'PT Sans Narrow', sans-serif;
-    color: #517B8D;
+    color: #dfdfdf;
 }
 
 footer p{
