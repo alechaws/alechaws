@@ -275,7 +275,7 @@ div.weddingflex{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;   
-    align-content: center'
+    align-content: center;
 }
 div.weddingflex section article img{
     max-width: 100%;
