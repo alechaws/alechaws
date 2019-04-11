@@ -23,6 +23,7 @@
 <link href="css/large.css" rel="stylesheet">
 
 <script src="scripts/toggleMenu.js"></script>
+<script src="scripts/current_Preston.js"></script>
 
 <link rel="icon" href="images/icon.png">     
 </head>
@@ -32,7 +33,7 @@
         <header class="clearfix">
             <div>
                 <div>
-                    <img src="images/logo.png" alt="logo">   
+                        <a href="index.html"><img src="images/logo.png" alt="logo"></a>   
                 </div>
                         
                <div>
@@ -50,18 +51,120 @@
 
         <button onclick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="reservations.html">Reservations</a></li>
-            <li><a href="temples.html">Temples</a></li>
+            <li class="active"><a href="temples.html">Temples</a></li>
             <li><a href="services.html">Services</a></li>
+            <li><a href=contactus.html>Contact Us</a></li>
         </ul>
     </nav>
     
     
 <!-- CONTENT HERE -->
 <main>
+    <section class="weather">
+        <h1>Weather:</h1>
+        <section class="currentweather">
+                <article>
+                    <h3>Current Conditions:</h3>
+                    <img src="images/placeholder.png" alt="current weather" id="weather_icon">
+                </article>   
+                <article>
+                    <p>Low:<span id="low">00</span>&deg;</p>
+                </article>   
+                <article>
+                    <p>High:<span id="high">00</span>&deg;</p>
+                </article>
+                <article>
+                    <p>Current:<span id="currentTemp">00</span>&deg;</p>
+                </article>                    
+                
+            </section>
+    </section>
+<h1>Temples</h1>
+<h3>Here are some examples of the  temples that we have locations near:</h3>
 
+    <div class="temples">
+        <article>
+        <h1>Rexburg Idaho Temple</h1>
+        <p>Address: 750 S 2nd E <br> Rexburg ID 83440-5404 <br> United States</p>
+        <p>Services offered by the temple:</p>
+        <ul>
+            <li>Clothing rental available</li>
+            <li>No cafeteria available</li>
+            <li>No patron housing available</li>
+            <li>Distribution center nearby</li>
+        </ul>
+        <p>Ordinance schedule: Sessions held every 45 minutes starting at 6:00AM going until the final session at 7:30PM</p>
+        <p>Next Closure: Monday, 15 April 2019 - Monday, 29 April 2019</p>
+        <p>Historical Dates:</p>
+        <ul>
+            <li>12 December 2003 - Announced</li>
+            <li>30 July 2005 - Groundbreaking</li>
+            <li>10 February 2008- -Dedicated</li>
+        </ul>
+        </article>
 
+        <article>
+                <h1>Idaho Falls Idaho Temple</h1>
+                <p>Address: 1000 Memorial Dr<br>Idaho Falls ID 83402-3410<br>United States</p>
+                <p>Services offered by the temple:</p>
+                <ul>
+                    <li>Clothing rental available</li>
+                    <li>Cafeteria available</li>
+                    <li>No patron housing available</li>
+                    <li>Distribution center nearby</li>
+                </ul>
+                <p>Ordinance schedule: Sessions held every 30 minutes starting at 6:00AM going until the final session at 7:30PM</p>
+                <p>Next Closure: Monday, 24 June 2019 - Monday, 8 July 2019</p>
+                <p>Historical Dates:</p>
+                <ul>
+                    <li>4 October 2008 - Announced</li>
+                    <li>23 October 2010 - Groundbreaking</li>
+                    <li>10 March 2019- -Dedicated</li>
+                </ul>
+        </article>
+
+        <article>
+                <h1>Gilbert Arizona Temple</h1>
+                <p>Address: 3301 S Greenfield Rd <br>Gilbert AZ 85297 <br>United States</p>
+                <p>Services offered by the temple:</p>
+                <ul>
+                    <li>Clothing rental available</li>
+                    <li>No cafeteria available</li>
+                    <li>No patron housing available</li>
+                    <li>Distribution center nearby</li>
+                </ul>
+                <p>Ordinance schedule: Sessions held every 45 minutes starting at 6:00AM going until the final session at 7:30PM</p>
+                <p>Next Closure: Monday, 15 April 2019 - Monday, 29 April 2019</p>
+                <p>Historical Dates:</p>
+                <ul>
+                    <li>10 April 2008 - Announced</li>
+                    <li>13 November 2010 - Groundbreaking</li>
+                    <li>2 March 2014- -Dedicated</li>
+                </ul>
+                </article>
+
+                <article>
+                        <h1>Salt Lake Temple</h1>
+                        <p>Address: 50 W North Temple St<br>Salt Lake City UT 84150-9709 <br>United States</p>
+                        <p>Services offered by the temple:</p>
+                        <ul>
+                            <li>Clothing rental available</li>
+                            <li>Cafeteria available</li>
+                            <li>No patron housing available</li>
+                            <li>Distribution center nearby</li>
+                        </ul>
+                        <p>Ordinance schedule: Sessions held every 30 minutes starting at 6:00AM going until the final session at 7:30PM</p>
+                        <p>Next Closure: Tuesday, 2 July 2019 - Monday, 15 July 2019</p>
+                        <p>Historical Dates:</p>
+                        <ul>
+                            <li>28 July 1847 - Announced</li>
+                            <li>14 February 1853 - Groundbreaking</li>
+                            <li>6 April 1893 -Dedicated</li>
+                        </ul>
+                        </article>
+    </div>
 
 </main>
 

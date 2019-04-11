@@ -1,0 +1,85 @@
+{
+    "temples" : [
+    {
+      "name": "Rexburg Idaho Temple",
+      "address": "750 S 2nd E <br> Rexburg ID 83440-5404 <br> United States",
+      "telephone": "208-656-0880",
+      "services": [ 
+          "Clothing rental available",
+          "No cafeteria available",
+          "No patron housing available",
+          "Distribution center nearby"
+      ],
+      "history": [
+          "12 December 2003 - Announced",
+          "30 July 2005 - Groundbreaking",
+          "10 February 2008- -Dedicated"
+      ],
+      "schedule" : "Sessions held every 45 minutes starting at 6:00AM going until the final session at 7:30PM",
+      "closureSchedule" : [
+          "Monday, 15 April 2019 - Monday, 29 April 2019"
+      ]
+    },
+    {
+      "name": "Gilbert Arizona Temple",
+      "address": "3301 S Greenfield Rd <br>Gilbert AZ 85297 <br>United States",
+      "telephone": "480-822-5000",
+      "services": [ 
+          "Clothing rental available",
+          "No Cafeteria available",
+          "No Patron housing available",
+          "Distribution center nearby"
+      ],
+      "history": [
+          "10 April 2008 - Announced",
+          "13 November 2010 - Groundbreaking",
+          "2 March 2014 - Dedicated"
+      ],
+      "ordSched" : "Sessions held every 45 minutes starting at 6:00AM going until the final session at 7:30PM",
+      "closureSchedule" : [
+          "Monday, 30 September 2019 - Monday, 14 October 2019"
+      ]
+    },
+    {
+      "name": "Idaho Falls Idaho Temple",
+      "address": "1000 Memorial Dr<br>Idaho Falls ID 83402-3410<br>United States",
+      "telephone": "208-522-7669",
+      "services": [ 
+          "Clothing rental available",
+          "Cafeteria available",
+          "No patron housing available",
+          "Distribution center nearby"
+      ],
+      "history": [
+          "4 October 2008  - Announced",
+          "23 October 2010 - Groundbreaking",
+          "10 March 2019   - Dedicated"
+  
+      ],
+      "ordSched" : "Sessions held every 30 minutes starting at 6:00AM going until the final session at 7:30PM",
+      "closureSchedule" : [
+          "Monday, 24 June 2019 - Monday, 8 July 2019"    
+      ]
+    },
+    {
+      "name": "Salt Lake Temple",
+      "address": "50 W North Temple St<br>Salt Lake City UT 84150-9709 <br>United States",
+      "telephone": "801-240-2640",
+      "services": [ 
+          "Clothing rental available",
+          "Cafeteria available",
+          "No patron housing available",
+          "Distribution center nearby"
+      ],
+      "history": [
+          "28 July 1847 - Announced",
+          "14 February 1853 - Groundbreaking",
+          "6 April 1893 - Dedicated"
+      ],
+      "ordSched" : "Sessions held every 30 minutes starting at 6:00AM going until the final session at 7:30PM",
+      "closureSchedule" : [
+          "Tuesday, 2 July 2019 - Monday, 15 July 2019"  
+      ]
+    }
+   ]
+  }

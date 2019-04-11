@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Temple Inn and Suites - Rexburg, Idaho">
+<meta name="author" content="Alec Haws">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>Temple Inn and Suites</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<!-- STYLE SHEETS -->
+
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+
+<script src="scripts/toggleMenu.js"></script>
+
+<link rel="icon" href="images/icon.png">
+ 
+</head>
+<body>
+<!-- HEADER HERE -->
+	
+        <header class="clearfix">
+            <div>
+                <div>
+                    <a href="index.html"><img src="images/logo.png" alt="logo"></a>   
+                </div>
+                        
+               <div>
+                    <h1>Temple Inn & Suites</h1>
+                    <h2>Rexburg's premiere hotel destnation</h2>
+               </div>
+                
+            </div>           
+            
+        </header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="reservations.html">Reservations</a></li> 
+            <li><a href="temples.html">Temples</a></li>                       
+            <li><a href="services.html">Services</a></li>
+            <li><a href=contactus.html>Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+<main>
+    <div class="contact">
+        <section class="map">
+
+        <h1>Contact us:</h1>
+        <h3>Please feel free to reach out to us to let us know how we are doing!</h3>
+        <p>Phone: (866) 423-1830</p>
+        <p>Email: contact@templeinnandsuites.com</p>
+        <p>Address:<br>4800 Montgomery Ln #300<br>Bethesda,MD 20814</p>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.404837028582!2d-77.09772048413616!3d38.98325594948262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1554956505538!5m2!1sen!2sus" width="400" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </section>
+        <section>
+                <form>
+                    Name: <input type="text" name="name">
+                    <br>
+                    <input type="submit" value="Send Us Your Feedback" class="submitbtn" onSubmit="thanks.html">
+                  </form>
+                  <br>
+                  <textarea rows="20" cols="50" name="comment" form="usrform"></textarea>
+                  
+        </section>
+    </div>
+</main>
+
+    
+<!-- FOOTER HERE -->   
+    <footer>
+             
+        <p><a class="titles">Address:<br></a><a class="address">Temple View Inn and Suites<br>1830 North Temple Blvd<br>Rexburg, Idaho 83440</a><br><a class="titles"><br>Phone: </a>(208) 414-2342<a class="titles"> <br><br>Email: </a class="email">contact@templeview.com</p>
+        
+           <div class= "end"><script src="scripts/currentdate.js"></script> <br>  
+            &copy; 2019 &bull; Alec Haws &bull; 480-867-5309
+            </div>
+        
+    </footer>
+    
+</body>
+</html>

@@ -6,7 +6,7 @@
 <meta name="author" content="Alec Haws">
 
 <!-- This start file was build by Paul Cheney  -->
-<title>Temple Inn and Suites</title>
+<title>Temple Inn and Suites- Reservations</title>
 
 <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -32,7 +32,7 @@
         <header class="clearfix">
             <div>
                 <div>
-                    <img src="images/logo.png" alt="logo">   
+                        <a href="index.html"><img src="images/logo.png" alt="logo"></a>   
                 </div>
                         
                <div>
@@ -50,17 +50,68 @@
 
         <button onclick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="reservations.html">Reservations</a></li>
             <li><a href="temples.html">Temples</a></li>
             <li><a href="services.html">Services</a></li>
+            <li><a href=contactus.html>Contact Us</a></li>
         </ul>
     </nav>
     
     
 <!-- CONTENT HERE -->
 <main>
-
+        <h1>Book your stay at Temnple Inn & Suites</h1>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Personal Info: </legend>
+                <label class="top">Full Name*<input type="text" name="name" pattern="[a-zA-Z0-9\s]{5,}" required></label>        
+                <label class="top">Email*<input type="email" name="email" placeholder="name@example.com" required></label>
+                <label class="top">Phone*<input type="tel" name="phone" placeholder="1234567" pattern="[0-9]{10}" required></label>
+                <label class="top">Home State/ Country*<input type="text" name="state" pattern="[a-zA-Z0-9\s]{4,}" required></label>
+                <label class="top">Additional Comments/ Requests:<input type="text" name="state" pattern="[a-zA-Z0-9\s]"></label>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Tell us about your trip: </legend>
+        
+                <div>Trip dates:</div>
+                    <label class="sbs">Arrival Date: <input type="date" name="arrivalDate" value="date"></label>
+                    <label class="sbs">Departure Date: <input type="date" name="departureDate" value="date"></label>
+                
+                <div>Where will you be staying?</div>
+                    <label class="top">Select Hotel:
+                            <select name="subject">
+                                <option value="">Select hotel...</option>
+                                <option value="belmont">Temple Inn & Suites: Belmont, Massachusettes</option>
+                                <option value="cedarCity">Temple Inn & Suites: Cedar City, Utah</option>
+                                <option value="dallas">Temple Inn & Suites: Dallas, Texas</option>
+                                <option value="mesa">Temple Inn & Suites: Mesa, Arizona</option>
+                                <option value="rexburg">Temple Inn & Suites: Rexburg, Idaho</option>
+                                <option value="spring">Temple Inn & Suites: Spring, Texas</option>
+                            </select>
+                    </label>
+                <div>How many beds do you need?</div>
+                    <label class="sbs"><input type="checkbox" name="1" value="yes">1 King </label>
+                    <label class="sbs"><input type="checkbox" name="2" value="yes">1 Queen </label>
+                    <label class="sbs"><input type="checkbox" name="3" value="yes">2 Queens </label>
+                    <label class="sbs"><input type="checkbox" name="4" value="yes">1 Queen 1 Twin </label>
+                    <label class="sbs"><input type="checkbox" name="5" value="yes">Missionary Suite</label>
+        
+                <div>Will you be serving as a full-time temple missionary?</div>
+                    <label class="sbs"><input type="radio" name="missionary" value="yes">Yes</label>
+                    <label class="sbs"><input type="radio" name="missionary" value="no">No</label>        
+            </fieldset>
+            
+            <fieldset>
+                <legend>Additional comments</legend>            
+                    <input class="comments" type="text" size="30">
+            </fieldset> 
+        
+            <input type="submit" value="Book My Stay" class="submitBtn" onSubmit="thanks.html">
+        
+        
+        </form>
 
 
 </main>

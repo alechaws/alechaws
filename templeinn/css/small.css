@@ -11,7 +11,7 @@ main{
     margin:auto;
 }
 body{
-    background-color:#DFDFDF;
+    background-color:#dfdfdf;
 }
 /*----------- HEADER --------------*/
 header {
@@ -30,14 +30,17 @@ header h1,h2{
     text-align: center;
     margin: .25rem;
     padding: .25rem;
+    
 
 }
 header h1{
     margin-top: 1rem;
     font-size: 2rem;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
 }
 header h2{
     font-size: 1rem;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
 }
 /*----------- NAVIGATION --------------*/
 button{
@@ -48,9 +51,11 @@ button{
     color:#517b8d;
 }
 nav {
-    background-color: #dfdfdf;
-    font-family: 'PT Sans Narrow', sans-serif;    
- }
+    background-color: rgba(81, 181, 224, 0.342);
+    font-family: 'PT Sans Narrow', sans-serif;   
+    max-width: 110rem;
+    margin:auto;
+}
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -95,10 +100,9 @@ div.mainpage{
 div.mainpage article{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     width: 100%;
-    border: black solid 3px;
     padding: 0;
     margin: 0;
 }
@@ -113,25 +117,30 @@ div.mainpage article.article0{
 }
 div.mainpage article.article0 .texttop{
     position: absolute;
-    bottom: 82%;
+    bottom: 60%;
     font-family: 'Great Vibes', cursive;
     z-index: 1;
+    font-size:1.5rem;
 }
 div.mainpage article.article0 .text1{
     position: absolute;
+    display: none;
     bottom: 71%;
     z-index: 1;
+    font-size: 1rem;
 }
 div.mainpage article.article0 .text2{
+    display: none;
     position: absolute;
     bottom: 45%;
     z-index: 1;
 }
 div.mainpage article.article0 .text3{
     position: absolute;
-    bottom: 26%;
+    bottom: 3%;
+    left: 30%;
     color: white;
-    font-size: 2.5rem;
+    font-size: 1.2rem;
     text-decoration: none;
     background-color: #517B8D;
     border-radius: 15px;
@@ -144,6 +153,7 @@ div.mainpage article.article0 .text3:hover{
     box-shadow: 0 4px 8px 0 #DFDFDF, 0 6px 20px 0 #DFDFDF;
 }
 div.mainpage article.article0 .textbottom{
+    display: none;
     position: absolute;
     bottom: 0%;
 }
@@ -151,25 +161,241 @@ div.mainpage article.article0 img{
     display: flex;
     width:100%;
 }
-
 div.mainpage article.article0 h1{
     padding: 0 1%;
     margin: 0 1%;
     
 }
-div.mainpage article.article1 img{
-    display: flex;
-    width: 250px;
-}      
-
 div.mainpage article.article1{
-    width: 350px;
+    width: 98%;
+    border: 1px solid #8f8f8f;
+    border-radius: 5px;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+
+}
+div.mainpage article.article1 h1{
+    font-size: 1.5rem;
+    padding: 0;
+}
+div.mainpage article.article1 h2{
+    font-size: 1.2rem;
+    padding: 0;
+}
+div.mainpage article.article1 img{
+    width: 60%;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);
+}      
+figcaption{
+    text-align: center;
 }
 div.mainpage article.article2{
-    width:auto;
+    width: 98%;
+    flex-direction: row;
+    margin: 1%;
+    font-size: 1.2rem;
 }
-/*------------Form--------------*/
+div.mainpage article.article2 img{
+    width: 95%;
+    padding: 1rem;
+    margin: 1rem;
+    float: left;
+}
+div.mainpage article.article2 p{
+    display: block;
+    column-count: 1;
+    padding: .7rem;
+    font-size: 1.2rem;
+}
+.templeactivities{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+div.mainpage article.article3{
+    margin: 1%;
+    padding: .5rem;
+}
+div.mainpage article.article3 section{
+    width: 100%;
+    height: 85%;
+   align-items: center;
+}
+div.mainpage article.article3 img{
+    width: 90%;
+    margin: 0 .5rem;
 
+}
+div.mainpage article.article3 h1 {
+    margin: .5rem 1%;
+    padding: .5rem 1%;
+}
+div.mainpage article.article3 h2 {
+    margin: .5rem;
+    padding: .5rem;
+}
+div.mainpage article.article3 h4 {
+    margin: .5rem;
+    padding: .5rem;
+}
+div.servicesflex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+div.servicesflex section.servicestop li{
+    font-size: 1.2rem;
+}
+section.services{
+    border: 1px solid #517B8D;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    transition: all .15s ease-in-out;
+}
+section.services:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 10px #51B5E0;
+}
+div.servicesflex section.services img{
+    width: 100%;
+}
+div.servicesflex section.services a{
+    text-decoration: none;
+    color: #000;
+}
+
+div.weddingflex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;   
+    align-content: center'
+}
+div.weddingflex section article img{
+    max-width: 100%;
+}
+article.reception{
+    max-width: 650px;
+}
+main div.missionsuite{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div.missionsuite figure img{
+    width: 100%;
+}
+div.missionsuite figure img:hover{
+    box-shadow: 0 0 10px #517B8D;
+}
+main div.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1rem;
+    padding: 1rem;
+}
+.submitbtn{
+    border: none;
+    background-color: #51B5E0;
+    color: rgb(0, 0, 0);
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 1rem;
+    max-width: 20rem;
+}
+.submitbtn:hover{
+    box-shadow: 0 0 10px #517B8D;
+}
+section.weather{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 1rem;
+    background-color: #517B8D;
+}
+section.currentweather{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;   
+}
+section.currentweather article{
+    margin: 1rem;
+}
+div.temples{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+div.temples article{
+    margin: 1rem;
+}
+/*------------FORM--------------*/
+form fieldset{
+    display: flex;
+    margin: 2rem 0;
+    border: 1px solid #51B5E0;
+    border-radius: 5px;
+    padding: .5rem 2%;
+ }
+form legend{
+    color: black;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+form label.top, form div{
+    
+    padding-top: 1rem;
+    color: black;
+    font-size: .8rem;
+}
+form label.top input, form label.top select{
+    
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 130px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color:rgba(81, 181, 224, 0.158);
+}
+form label.sbs{
+    
+    padding: .75rem 0;
+    color: #555;
+}
+form input.submitBtn{
+    border: none;
+    background-color: #51B5E0;
+    color: rgb(0, 0, 0);
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    max-width: 20rem;
+}
+form label.top input:required{
+    border-left: red solid  6px;
+}
+form label.top input:required:valid{
+    border-left: #648af2 solid 6px;
+}
+fieldset{
+    max-width: 313px;
+}
+
+.thankslogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
 
 /*----------- FOOTER --------------*/
 footer {
