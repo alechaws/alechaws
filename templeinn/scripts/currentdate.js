@@ -10,4 +10,4 @@ var year= d.getFullYear() ;
 
 var today=  dayOfWeek + ", " + day  + " " +  month  + " " + year;
 
-document.write(today)
+//document.write(today)
