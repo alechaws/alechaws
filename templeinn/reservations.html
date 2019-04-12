@@ -68,7 +68,7 @@
                 <label class="top">Full Name*<input type="text" name="name" pattern="[a-zA-Z0-9\s]{5,}" required></label>        
                 <label class="top">Email*<input type="email" name="email" placeholder="name@example.com" required></label>
                 <label class="top">Phone*<input type="tel" name="phone" placeholder="1234567" pattern="[0-9]{10}" required></label>
-                <label class="top">Home State/ Country*<input type="text" name="state" pattern="[a-zA-Z0-9\s]{4,}" required></label>
+                <label class="top">Home State (or Country)*<input type="text" name="state" pattern="[a-zA-Z0-9\s]{2,}" required></label>
                 <label class="top">Additional Comments/ Requests:<input type="text" name="state" pattern="[a-zA-Z0-9\s]"></label>
             </fieldset>
         
@@ -92,11 +92,11 @@
                             </select>
                     </label>
                 <div>How many beds do you need?</div>
-                    <label class="sbs"><input type="checkbox" name="1" value="yes">1 King </label>
-                    <label class="sbs"><input type="checkbox" name="2" value="yes">1 Queen </label>
-                    <label class="sbs"><input type="checkbox" name="3" value="yes">2 Queens </label>
-                    <label class="sbs"><input type="checkbox" name="4" value="yes">1 Queen 1 Twin </label>
-                    <label class="sbs"><input type="checkbox" name="5" value="yes">Missionary Suite</label>
+                    <label class="sbs"><input type="radio" name="room" value="1K">1 King </label>
+                    <label class="sbs"><input type="radio" name="room" value="1Q">1 Queen </label>
+                    <label class="sbs"><input type="radio" name="room" value="2Q">2 Queens </label>
+                    <label class="sbs"><input type="radio" name="room" value="1Q1T">1 Queen 1 Twin </label>
+                    <label class="sbs"><input type="radio" name="room" value="MS">Missionary Suite</label>
         
                 <div>Will you be serving as a full-time temple missionary?</div>
                     <label class="sbs"><input type="radio" name="missionary" value="yes">Yes</label>
@@ -105,7 +105,7 @@
             
             <fieldset>
                 <div>Additional comments</div>            
-                    <label class="sbs"><input class="comments" type="text" size="30"></label>
+                    <label class="sbs"><input class="text" type="text" size="30"></label>
             </fieldset> 
         
             <input type="submit" value="Book My Stay" class="submitBtn" onSubmit="thanks.html">
